@@ -8,9 +8,13 @@ namespace w9wen.EfSharedKernel
     // This can be modified to BaseEntity<TId> to support multiple key types (e.g. Guid)
     public abstract class BaseEntity
     {
+        [DisplayName("序號")]
         public int Id { get; set; }
 
-        public List<BaseDomainEvent> Events = new List<BaseDomainEvent>();
+        [DisplayName("備註")]
+        [DataType(DataType.MultilineText)]
+        [StringLength(200)]
+        public string Note { get; set; }
 
         /// <summary>
         /// 建立時間
@@ -69,5 +73,6 @@ namespace w9wen.EfSharedKernel
         [Editable(false)]
         public byte[] Rowversion { get; set; }
 
+        public List<BaseDomainEvent> Events = new List<BaseDomainEvent>();
     }
 }
