@@ -12,6 +12,7 @@ namespace w9wen.EfSharedKernel
         /// </summary>
         /// <value>地址</value>
         [Display(Name = "街/路")]
+        [StringLength(100)]
         public string Street { get; private set; }
 
         /// <summary>
@@ -19,6 +20,7 @@ namespace w9wen.EfSharedKernel
         /// </summary>
         /// <value>城市</value>
         [Display(Name = "城市")]
+        [StringLength(30)]
         public string City { get; private set; }
 
         /// <summary>
@@ -26,6 +28,7 @@ namespace w9wen.EfSharedKernel
         /// </summary>
         /// <value>州/省/地區</value>
         [Display(Name = "州/省/地區")]
+        [StringLength(30)]
         public string State { get; private set; }
 
         /// <summary>
@@ -34,6 +37,7 @@ namespace w9wen.EfSharedKernel
         /// <value>郵遞區號</value>
         [DataType(DataType.PostalCode)]
         [Display(Name = "郵遞區號")]
+        [StringLength(10)]
         public string ZipCode { get; private set; }
 
         /// <summary>
@@ -41,6 +45,7 @@ namespace w9wen.EfSharedKernel
         /// </summary>
         /// <value>國別</value>
         [Display(Name = "國別")]
+        [StringLength(50)]
         public string Country { get; private set; }
 
         #region Constructor
