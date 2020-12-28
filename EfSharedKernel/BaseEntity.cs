@@ -19,6 +19,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 建立時間
         /// </summary>
+        [Required]
         [DisplayName("建立時間")]
         [DataType(DataType.DateTime)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd HH:mm:ss}")]
@@ -29,6 +30,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 建立者
         /// </summary>
+        [Required]
         [DisplayName("建立者")]
         [Editable(false)]
         [StringLength(50)]
@@ -37,6 +39,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 更新次數
         /// </summary>
+        [Required]
         [DisplayName("更新次數")]
         [Editable(false)]
         public byte UpdatedTimes { get; set; }
@@ -44,6 +47,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 更新時間
         /// </summary>
+        [Required]
         [DisplayName("更新時間")]
         [DataType(DataType.DateTime)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:yyyy/MM/dd HH:mm:ss}")]
@@ -54,6 +58,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 更新者
         /// </summary>
+        [Required]
         [DisplayName("更新者")]
         [Editable(false)]
         [StringLength(50)]
@@ -62,6 +67,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 生效標記
         /// </summary>
+        [Required]
         [DisplayName("生效標記")]
         [Editable(false)]
         public bool ValidFlag { get; set; }
@@ -69,6 +75,7 @@ namespace w9wen.EfSharedKernel
         /// <summary>
         /// 資料版號
         /// </summary>
+        [Required]
         [DisplayName("資料版號")]
         [Editable(false)]
         public byte[] Rowversion { get; set; }
