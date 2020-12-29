@@ -1,10 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace w9wen.EfSharedKernel
 {
     /// <summary>
     /// 地址
     /// </summary>
+    [Keyless]
     public class Address
     {
         /// <summary>
