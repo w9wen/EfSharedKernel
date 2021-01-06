@@ -72,13 +72,13 @@ namespace w9wen.EfSharedKernel
         [Editable(false)]
         public bool ValidFlag { get; set; }
 
-        /// <summary>
-        /// 資料版號
-        /// </summary>
-        [Required]
-        [DisplayName("資料版號")]
-        [Editable(false)]
-        public byte[] Rowversion { get; set; }
+        ///// <summary>
+        ///// 資料版號
+        ///// </summary>
+        //[Required]
+        //[DisplayName("資料版號")]
+        //[Editable(false)]
+        //public byte[] Rowversion { get; set; }
 
         public List<BaseDomainEvent> Events = new List<BaseDomainEvent>();
     }
