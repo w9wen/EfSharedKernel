@@ -78,7 +78,8 @@ namespace w9wen.EfSharedKernel
         //[Required]
         //[DisplayName("資料版號")]
         //[Editable(false)]
-        //public byte[] Rowversion { get; set; }
+        //[Timestamp]
+        //public byte[] RowVersion { get; set; }
 
         public List<BaseDomainEvent> Events = new List<BaseDomainEvent>();
     }
